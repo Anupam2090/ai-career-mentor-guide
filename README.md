@@ -1,5 +1,7 @@
 # 🎓 Personalized AI Career Mentor
 
+![UI Screenshot](webpage.png)
+
 An intelligent web application built with Flask and Google's Gemini API that analyzes user resumes, generates personalized career roadmaps, and forecasts market trends.
 
 ---
@@ -110,25 +112,9 @@ python app.py
 When you run the app and upload your resume:
 
 ## ✅ Resume Analysis (Gemini)
-- Skills: Python, SQL, Machine Learning
-- Gaps: No certifications in Cloud or Data Engineering
-- Suggested Courses: Google Data Analytics, AWS Certified Solutions Architect
-
 ## 🗺️ Career Roadmap (AI-Powered)
-1. Master SQL and Python fundamentals
-2. Learn data visualization (Tableau, Power BI)
-3. Earn Google Data Analytics certification
-4. Gain experience through Kaggle projects
-5. Apply to entry-level data roles
-
 ## 📈 Market Trends (Live)
-📊 Based on current trends, the demand for **Data Scientist** is rising.  
-🚀 Relevant roles include Machine Learning Engineer, Data Analyst, and AI Researcher.  
-🌐 Suggested platforms: LinkedIn, Indeed, HackerRank.
 
-🔍 3,215 jobs found for 'Data Scientist' on Indeed  
-🔗 [View on Indeed](https://www.indeed.com/jobs?q=Data+Scientist&l=)  
-🔗 [View on LinkedIn](https://www.linkedin.com/jobs/search/?keywords=Data%20Scientist)
 
 ```
 ```
