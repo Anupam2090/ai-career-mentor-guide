@@ -1,38 +1,47 @@
 /* General Reset and Font */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(224, 247, 250, 0.4)),
+    url('/static/ai\ mentor.png') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 40px 20px;
-  color: #333;
+  color: #222;
 }
+
+
 
 /* Container Styles */
 .container {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 40px 30px;
-  max-width: 700px;
-  margin: auto;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* transparent white */
+  border-radius: 20px;                        /* rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);   /* soft shadow */
+  padding: 40px;
+  max-width: 600px;
+  margin: 5% auto;
+  backdrop-filter: blur(10px);                /* blur background behind */
+  -webkit-backdrop-filter: blur(10px);        /* Safari support */
 }
+
 
 .container:hover {
   transform: translateY(-5px);
 }
 
 /* Headings */
-h1 {
+h1 { 
   text-align: center;
   font-size: 2.2em;
   margin-bottom: 30px;
-  color: #0a74da;
+  color: #e7b330;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
   margin-top: 30px;
-  color: #0a74da;
+  color: #eeb320;
 }
 
 /* Form Styles */
@@ -55,31 +64,34 @@ input[type="text"] {
 
 input[type="text"]:focus,
 input[type="file"]:focus {
-  border-color: #0a74da;
+  border-color: #daa30a;
   outline: none;
 }
 
 /* Button Styles */
 button {
-  display: inline-block;
-  background-color: #0a74da;
+  background-color: #daa30a;  /* Golden yellow to match your h1 */
   color: white;
   padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
   font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #084d9e;
+  background-color: #c48d00;
+  transform: scale(1.05);
 }
+
 
 /* Output Section */
 .output-section {
   background: #eaf3ff;
-  border-left: 6px solid #0a74da;
+  border-left: 6px solid #c48d00;
   border-radius: 12px;
   padding: 25px;
   margin-top: 30px;

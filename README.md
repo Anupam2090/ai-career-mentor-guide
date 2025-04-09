@@ -71,17 +71,22 @@ cd ai-career-mentor-guide
 ```
 
 # Create venv
+```
 python -m venv venv
 
+```
 # Activate (Windows)
 venv\Scripts\activate
-
+```
+```
 # Activate (macOS/Linux)
 source venv/bin/activate
-
+```
+```
 # Install Dependencies
 pip install -r requirements.txt
 
+```
 ```
 
 # Store the API Key
@@ -90,7 +95,7 @@ Create a credentials.ini file in your project root:
 api_key=your-api-key-here
 
 ```
-
+```
 # Run the Application
 
 ---
