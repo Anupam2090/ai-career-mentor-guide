@@ -6,10 +6,10 @@ config = ConfigParser()
 config.read('credentials.ini')
 api_key = config['gemini_ai']['API_KEY']
 
-# ✅ Correct way to configure the API
+# Correct way to configure the API
 genai.configure(api_key=api_key)
 
-# ✅ Use correct model name and method
+# Use correct model name and method
 model = genai.GenerativeModel("gemini-1.5-pro-latest")
   # this is the latest stable version
 
@@ -24,6 +24,6 @@ def analyze_resume(resume_text):
     {resume_text}
     """
 
-    # ✅ Gemini now uses this method with a list of strings as prompt
+    # Gemini now uses this method with a list of strings as prompt
     response = model.generate_content([prompt])
     return response.text
