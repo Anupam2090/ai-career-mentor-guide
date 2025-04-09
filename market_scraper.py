@@ -23,8 +23,8 @@ def get_job_trends(keyword):
 
         return (
             # f"<p>🔍 <b>{job_count}</b> jobs found for <b>{keyword}</b> on Indeed.</p>"
-            # f"<p>🚀 In this field, some of the most in-demand roles are: <br><br>🔗 <a href='{url_indeed}' target='_blank'>View on Indeed</a></p>"
-            # f"<p>🔗 <a href='{url_linkedin}' target='_blank'>View on LinkedIn</a></p>"
+            f"<p>🚀 In this field, some of the most in-demand roles are: <br><br>🔗 <a href='{url_indeed}' target='_blank'>View on Indeed</a></p>"
+            f"<p>🔗 <a href='{url_linkedin}' target='_blank'>View on LinkedIn</a></p>"
         )
 
     except Exception as e:
