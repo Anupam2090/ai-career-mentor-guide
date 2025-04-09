@@ -1,0 +1,126 @@
+/* General Reset and Font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+}
+
+/* Container Styles */
+.container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #0a74da;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #0a74da;
+}
+
+/* Form Styles */
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  border-color: #0a74da;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  background-color: #0a74da;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #084d9e;
+}
+
+/* Output Section */
+.output-section {
+  background: #eaf3ff;
+  border-left: 6px solid #0a74da;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 30px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.output-section h3 {
+  color: #0a74da;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.output-section ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+.output-section ul li {
+  margin-bottom: 10px;
+}
+
+.output-section p {
+  background: #fefefe;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}

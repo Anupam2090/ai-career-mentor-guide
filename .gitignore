@@ -1,0 +1,25 @@
+# Ignore the virtual environment folder
+venv
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore credentials(API key)
+credentials.ini
+
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore logs and temporary files
+*.log
+*.sqlite3
+
+model_name.py
+
+

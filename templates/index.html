@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Career Mentor</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>🔮 AI Career Mentor</h1>
+
+    <form method="post" enctype="multipart/form-data">
+      <label for="resume">Upload Resume (PDF):</label>
+      <input type="file" id="resume" name="resume" required>
+
+      <label for="goal">Your Career Goal:</label>
+      <input type="text" id="goal" name="career_goal" placeholder="e.g. AI Researcher, Data Scientist" required>
+
+      <button type="submit">🚀 Analyze</button>
+    </form>
+
+    {% if analysis %}
+      <div class="output">
+        <h2>📄 Resume Analysis</h2>
+        <p>{{ analysis }}</p>
+
+        <h2>🛤 Career Roadmap</h2>
+        <p>{{ roadmap }}</p>
+
+        <h2>📈 Market Trends</h2>
+        <div>{{ market_trends | safe }}</div>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
