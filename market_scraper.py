@@ -22,7 +22,7 @@ def get_job_trends(keyword):
         url_linkedin = f"https://www.linkedin.com/jobs/search/?keywords={keyword.replace(' ', '%20')}"
 
         return (
-            # f"<p>🔍 <b>{job_count}</b> jobs found for <b>{keyword}</b> on Indeed.</p>"
+           
             f"<p>🚀 In this field, some of the most in-demand roles are: <br><br>🔗 <a href='{url_indeed}' target='_blank'>View on Indeed</a></p>"
             f"<p>🔗 <a href='{url_linkedin}' target='_blank'>View on LinkedIn</a></p>"
         )
@@ -37,7 +37,6 @@ def get_market_trends(career_goal):
     """
     static_trend = (
         f"<p>📊 Based on current trends, the demand for <b>{career_goal}</b> is rising.</p>"
-        # f"<p>🚀 In this field, some of the most in-demand roles are:</p>"
         f"<p>🌐 Suggested platforms: LinkedIn, Indeed.</p>"
     )
     job_data = get_job_trends(career_goal)

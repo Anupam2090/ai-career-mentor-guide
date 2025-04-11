@@ -8,7 +8,13 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔮 AI Career Mentor</h1>
+    <h1 style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+      <img src="{{ url_for('static', filename='assets/career-path (1).png') }}" alt="Career Icon" style="height: 40px;">
+      AI Career Mentor
+    </h1>
+    
+    
+    
 
     <form method="post" enctype="multipart/form-data">
       <label for="resume">Upload Resume (PDF):</label>
@@ -17,20 +23,35 @@
       <label for="goal">Your Career Goal:</label>
       <input type="text" id="goal" name="career_goal" placeholder="e.g. AI Researcher, Data Scientist" required>
 
-      <button type="submit">🚀 Analyze</button>
+      <button type="submit" style="display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-weight: bold; font-size: 1em;">
+        <img src="{{ url_for('static', filename='assets/analyze.png') }}" alt="Rocket Icon" style="height: 20px;">
+        Analyze
+      </button>
+      
     </form>
 
     {% if analysis %}
-      <div class="output">
-        <h2>📄 Resume Analysis</h2>
-        <p>{{ analysis }}</p>
+    <div class="output">
 
-        <h2>🛤 Career Roadmap</h2>
-        <p>{{ roadmap }}</p>
-
-        <h2>📈 Market Trends</h2>
-        <div>{{ market_trends | safe }}</div>
-      </div>
+      <h2 style="display: flex; align-items: center; gap: 10px;">
+        <img src="{{ url_for('static', filename='assets/resume.png') }}" alt="Resume Icon" style="height: 24px;">
+        Resume Analysis
+      </h2>
+      <p>{{ analysis }}</p>
+  
+      <h2 style="display: flex; align-items: center; gap: 10px;">
+        <img src="{{ url_for('static', filename='assets/roadmap.png') }}" alt="Roadmap Icon" style="height: 24px;">
+        Career Roadmap
+      </h2>
+      <p>{{ roadmap }}</p>
+  
+      <h2 style="display: flex; align-items: center; gap: 10px;">
+        <img src="{{ url_for('static', filename='assets/trends.png') }}" alt="Market Trends Icon" style="height: 24px;">
+        Market Trends
+      </h2>
+      <div>{{ market_trends | safe }}</div>
+  
+    </div>
     {% endif %}
   </div>
 </body>
